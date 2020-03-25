@@ -29,12 +29,13 @@ app.use(express.json());
  *  ex: /users/:id => /users/1
  * Request Body: Corpo da requisição, utilizado para criar ou alterar recursos
  *  acesso através de "request.body"
- *  ex: método POST
- * body = {
-    "nome": "Jorge Hecherat",
-	  "idade": 30
-   }
-   header = Content-Type: application/json
+ *  ex: 
+ *  método POST
+ *  body = {
+      "nome": "Jorge Hecherat",
+      "idade": 30
+    }
+    header = Content-Type: application/json
  */
 
 app.post("/users", (request, response) => {
