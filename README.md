@@ -28,37 +28,37 @@ Conectar ONGs a pessoas que possuem vontade de ajudar e muitas vezes não tem te
   - [x] Rotas e recursos
   - [x] Métodos HTTP
   - [x] Tipos de parâmetros
-- [] Configurando Nodemon
-- [] Utilizando Insomnia
-- [] Diferenças entre bancos de dados
-- [] Pensando nas entidades e funcionalidades
-- [] Construção do back-end
-- [] Adicionando módulo CORS
-- [] Enviando back-end ao Github
+- [ ] Configurando Nodemon
+- [ ] Utilizando Insomnia
+- [ ] Diferenças entre bancos de dados
+- [ ] Pensando nas entidades e funcionalidades
+- [ ] Construção do back-end
+- [ ] Adicionando módulo CORS
+- [ ] Enviando back-end ao Github
 
 ### 📌 Terceiro dia - 25/03/2020
 
-- [] Limpando estrutura
-- [] Conceitos do React
-  - [] Componente
-  - [] JSX
-  - [] Propriedades
-  - [] Estado
-  - [] Imutabilidade
-- [] Página de login
-- [] Configurando rotas
-- [] Cadastro de ONGs
-- [] Listagem de casos
-- [] Cadastro de um novo caso
-- [] Conectanto a aplicação à API
-- [] Enviar projeto ao Github
+- [ ] Limpando estrutura
+- [ ] Conceitos do React
+  - [ ] Componente
+  - [ ] JSX
+  - [ ] Propriedades
+  - [ ] Estado
+  - [ ] Imutabilidade
+- [ ] Página de login
+- [ ] Configurando rotas
+- [ ] Cadastro de ONGs
+- [ ] Listagem de casos
+- [ ] Cadastro de um novo caso
+- [ ] Conectanto a aplicação à API
+- [ ] Enviar projeto ao Github
 
 ### 📌 Quarto dia - 26/03/2020
 
-- []
+- [ ]
 
 ### 📌 Quinto dia - 27/03/2020
 
-- []
+- [ ]
 
 ---
