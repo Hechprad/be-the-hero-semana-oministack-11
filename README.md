@@ -1,1 +1,64 @@
-# Oministack_11
+# Semana OminiStack 11.0 - [Rocketseat](https://rocketseat.com.br/) 🚀
+
+---
+
+## 🦸‍♀️Aplicação - Be the Hero 🦸‍♂️
+
+#### Propósito do projeto:
+
+Conectar ONGs a pessoas que possuem vontade de ajudar e muitas vezes não tem tempo, mas podem ajudar financeiramente.
+
+---
+
+### 📌 Primeiro dia - 23/03/2020
+
+- [x] Apresentar aplicação
+- [x] Configurar ambiente de desenvolvimento
+  - [x] Node.js & NPM
+  - [x] Visual Studio Code
+- [x] Entender sobre back-end e front-end
+- [x] Criar projet ocom Node.js
+- [x] Entender sobre React & SPA
+- [x] Criar projeto com ReactJS
+- [x] Entender sobre React Native & Expo
+
+### 📌 Segundo dia - 24/03/2020
+
+- [x] Node.js & Express
+  - [x] Rotas e recursos
+  - [x] Métodos HTTP
+  - [x] Tipos de parâmetros
+- [] Configurando Nodemon
+- [] Utilizando Insomnia
+- [] Diferenças entre bancos de dados
+- [] Pensando nas entidades e funcionalidades
+- [] Construção do back-end
+- [] Adicionando módulo CORS
+- [] Enviando back-end ao Github
+
+### 📌 Terceiro dia - 25/03/2020
+
+- [] Limpando estrutura
+- [] Conceitos do React
+  - [] Componente
+  - [] JSX
+  - [] Propriedades
+  - [] Estado
+  - [] Imutabilidade
+- [] Página de login
+- [] Configurando rotas
+- [] Cadastro de ONGs
+- [] Listagem de casos
+- [] Cadastro de um novo caso
+- [] Conectanto a aplicação à API
+- [] Enviar projeto ao Github
+
+### 📌 Quarto dia - 26/03/2020
+
+- []
+
+### 📌 Quinto dia - 27/03/2020
+
+- []
+
+---
