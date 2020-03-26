@@ -1,9 +1,22 @@
 const express = require("express");
+const cors = require("cors");
+const routes = require("./routes");
 
 const app = express();
 
+/**
+ * CORS example
+ * app.use(cors({
+ *  origin: "http://meuapp.com"
+ * }));
+ */
+app.use(cors());
+
 // Converte o json do corpo da requisição em um objeto do javascript
 app.use(express.json());
+app.use(routes);
+
+app.listen(3333);
 
 /**
  * Rota / Recurso
@@ -38,15 +51,13 @@ app.use(express.json());
     header = Content-Type: application/json
  */
 
-app.post("/users", (request, response) => {
-  const params = request.body;
+/**
+ * Bancos do Dados
+ * SQL (Relacionais): MySQL, SQLite, PostgreSQL, Oracle, Microsoft SQL Server
+ * NoSQL (Não Ralacionais): MongoDB, CouchDB
+ */
 
-  console.log(params);
-
-  return response.json({
-    evento: "Semana Omnistack 11.0",
-    aluno: "Jorge Hecherat"
-  });
-});
-
-app.listen(3333);
+/**
+ * Driver: SELECT * FROM users
+ * Query Builder: table('users').select('*').where()
+ */
