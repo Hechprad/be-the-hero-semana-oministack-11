@@ -28,10 +28,11 @@ Conectar ONGs a pessoas que possuem vontade de ajudar e muitas vezes não tem te
   - [x] Rotas e recursos
   - [x] Métodos HTTP
   - [x] Tipos de parâmetros
-- [ ] Configurando Nodemon
-- [ ] Utilizando Insomnia
-- [ ] Diferenças entre bancos de dados
-- [ ] Pensando nas entidades e funcionalidades
+- [x] Utilizando Insomnia
+- [x] Configurando Nodemon
+- [x] Diferenças entre bancos de dados
+- [x] Configurando banco de dados
+- [x] Pensando nas entidades e funcionalidades
 - [ ] Construção do back-end
 - [ ] Adicionando módulo CORS
 - [ ] Enviando back-end ao Github
