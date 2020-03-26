@@ -1,9 +1,12 @@
 const express = require("express");
-
+const routes = require("./routes");
 const app = express();
 
 // Converte o json do corpo da requisição em um objeto do javascript
 app.use(express.json());
+app.use(routes);
+
+app.listen(3333);
 
 /**
  * Rota / Recurso
@@ -48,16 +51,3 @@ app.use(express.json());
  * Driver: SELECT * FROM users
  * Query Builder: table('users').select('*').where()
  */
-
-app.post("/users", (request, response) => {
-  const params = request.body;
-
-  console.log(params);
-
-  return response.json({
-    evento: "Semana Omnistack 11.0",
-    aluno: "Jorge Hecherat"
-  });
-});
-
-app.listen(3333);
