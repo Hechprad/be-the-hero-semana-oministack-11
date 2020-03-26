@@ -38,6 +38,17 @@ app.use(express.json());
     header = Content-Type: application/json
  */
 
+/**
+ * Bancos do Dados
+ * SQL (Relacionais): MySQL, SQLite, PostgreSQL, Oracle, Microsoft SQL Server
+ * NoSQL (Não Ralacionais): MongoDB, CouchDB
+ */
+
+/**
+ * Driver: SELECT * FROM users
+ * Query Builder: table('users').select('*').where()
+ */
+
 app.post("/users", (request, response) => {
   const params = request.body;
 
