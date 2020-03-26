@@ -1,3 +1,4 @@
+//Documentation http://knexjs.org/
 // Update with your config settings.
 
 module.exports = {

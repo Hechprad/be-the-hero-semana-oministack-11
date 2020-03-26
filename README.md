@@ -33,6 +33,18 @@ Conectar ONGs a pessoas que possuem vontade de ajudar e muitas vezes não tem te
 - [x] Diferenças entre bancos de dados
 - [x] Configurando banco de dados
 - [x] Pensando nas entidades e funcionalidades
+  - Entidades
+    - [x] ONG
+    - [x] Caso (incident)
+  - Funcionalidades
+    - [ ] Login de ONG
+    - [ ] Logout de ONG
+    - [x] Cadastro de ONG
+    - [x] Cadastrar novos casos
+    - [x] Deletar casos
+    - [x] Listar casos específicos de uma ONG
+    - [x] Listar todos os casos
+    - [ ] Entrar em contato com a ONG (frontend)
 - [ ] Construção do back-end
 - [ ] Adicionando módulo CORS
 - [ ] Enviando back-end ao Github
