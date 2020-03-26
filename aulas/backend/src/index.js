@@ -1,6 +1,16 @@
 const express = require("express");
+const cors = require("cors");
 const routes = require("./routes");
+
 const app = express();
+
+/**
+ * CORS example
+ * app.use(cors({
+ *  origin: "http://meuapp.com"
+ * }));
+ */
+app.use(cors());
 
 // Converte o json do corpo da requisição em um objeto do javascript
 app.use(express.json());
