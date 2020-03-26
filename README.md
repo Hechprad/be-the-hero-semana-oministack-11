@@ -45,9 +45,9 @@ Conectar ONGs a pessoas que possuem vontade de ajudar e muitas vezes não tem te
     - [x] Listar casos específicos de uma ONG
     - [x] Listar todos os casos
     - [ ] Entrar em contato com a ONG (Front-end)
-- [ ] Construção do back-end
-- [ ] Adicionando módulo CORS
-- [ ] Enviando back-end ao Github
+- [x] Construção do back-end
+- [x] Adicionando módulo CORS
+- [x] Enviando back-end ao Github
 
 ### 📌 Terceiro dia - 25/03/2020
 
