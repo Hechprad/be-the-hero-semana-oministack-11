@@ -3,27 +3,35 @@ import React from "react";
 import logoImg from "../../assets/logo.svg";
 import heroesImg from "../../assets/heroes.png";
 
-import { FiLogInIcon } from "./styles";
+import FormInput from "../../components/FormInput";
+
+import {
+  FiLogInIcon,
+  Form,
+  FormTitle,
+  LogonContainer,
+  SectionForm
+} from "./styles";
 
 const Logon = () => (
-  <div className="logon-container">
-    <section className="form">
+  <LogonContainer>
+    <SectionForm>
       <img src={logoImg} alt="Be The Hero" />
 
-      <form>
-        <h1>Faça seu logon</h1>
+      <Form>
+        <FormTitle>Faça seu logon</FormTitle>
 
-        <input placeholder="Sua ID" />
+        <FormInput placeHolder="Sua ID" />
         <button type="submit">Entrar</button>
 
         <a href="/register">
           <FiLogInIcon />
           Não tenho cadastro
         </a>
-      </form>
-    </section>
+      </Form>
+    </SectionForm>
     <img src={heroesImg} alt="Heroes" />
-  </div>
+  </LogonContainer>
 );
 
 export default Logon;
