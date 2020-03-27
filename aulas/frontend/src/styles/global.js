@@ -21,4 +21,8 @@ export default createGlobalStyle`
   button {
     cursor: pointer;
   }
+  .button {
+    width: 100%;
+    height:50px;
+  }
 `;
