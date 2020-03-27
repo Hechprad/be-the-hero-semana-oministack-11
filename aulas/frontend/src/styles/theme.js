@@ -1,7 +1,8 @@
 export const themeColors = {
   background: "#f0f0f5",
   black: "#000",
-  darkGray: "#333333",
+  darkGray1: "#999999",
+  darkGray2: "#333333",
   gray1: "#dcdce6",
   gray2: "#737380",
   gray3: "#41414d",
