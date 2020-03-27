@@ -4,12 +4,12 @@ import logoImg from "../../assets/logo.svg";
 import heroesImg from "../../assets/heroes.png";
 
 import FormInput from "../../components/FormInput";
+import Link from "../../components/Link";
 
 import {
   FiLogInIcon,
   Form,
   FormTitle,
-  Link,
   LogonButton,
   LogonContainer,
   SectionForm
@@ -26,7 +26,7 @@ const Logon = () => (
         <FormInput placeHolder="Sua ID" />
         <LogonButton>Entrar</LogonButton>
 
-        <Link href="/register">
+        <Link to="/register">
           <FiLogInIcon />
           Não tenho cadastro
         </Link>
