@@ -8,7 +8,7 @@ export const LogonContainer = styled.div`
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 `;
 
 export const SectionForm = styled.section`
