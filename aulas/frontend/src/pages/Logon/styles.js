@@ -57,7 +57,7 @@ export const Link = styled.a`
   color: ${props => props.theme.colors.gray2};
   font-size: 18px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
   transition: opacity 0.2s;
 
   &:hover {
