@@ -4,6 +4,7 @@ import logoImg from "../../assets/logo.svg";
 import heroesImg from "../../assets/heroes.png";
 
 import FormInput from "../../components/FormInput";
+import LogonButton from "../../components/LogonButton";
 
 import {
   FiLogInIcon,
@@ -22,7 +23,7 @@ const Logon = () => (
         <FormTitle>Faça seu logon</FormTitle>
 
         <FormInput placeHolder="Sua ID" />
-        <button type="submit">Entrar</button>
+        <LogonButton />
 
         <a href="/register">
           <FiLogInIcon />
