@@ -58,7 +58,7 @@ Conectar ONGs a pessoas que possuem vontade de ajudar e muitas vezes não tem te
   - [x] Propriedades
   - [x] Estado
   - [x] Imutabilidade
-- [ ] Página de login
+- [x] Página de login
 - [ ] Configurando rotas
 - [ ] Cadastro de ONGs
 - [ ] Listagem de casos
