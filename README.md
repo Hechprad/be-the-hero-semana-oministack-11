@@ -51,13 +51,13 @@ Conectar ONGs a pessoas que possuem vontade de ajudar e muitas vezes não tem te
 
 ### 📌 Terceiro dia - 25/03/2020
 
-- [ ] Limpando estrutura
-- [ ] Conceitos do React
-  - [ ] Componente
-  - [ ] JSX
-  - [ ] Propriedades
-  - [ ] Estado
-  - [ ] Imutabilidade
+- [x] Limpando estrutura
+- [x] Conceitos do React
+  - [x] Componente
+  - [x] JSX
+  - [x] Propriedades
+  - [x] Estado
+  - [x] Imutabilidade
 - [ ] Página de login
 - [ ] Configurando rotas
 - [ ] Cadastro de ONGs
