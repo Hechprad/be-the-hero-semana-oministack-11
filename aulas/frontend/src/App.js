@@ -1,8 +1,14 @@
 import React from "react";
-import Header from "./components/Header";
+import Logon from "./pages/Logon";
+import { ThemeProvider } from "styled-components";
+import theme from "./styles/theme";
+import GlobalStyle from "./styles/global";
 
-function App() {
-  return <Header>Be The Hero</Header>;
-}
+const App = () => (
+  <ThemeProvider theme={theme}>
+    <GlobalStyle />
+    <Logon />
+  </ThemeProvider>
+);
 
 export default App;
