@@ -50,7 +50,24 @@ export const LogonButton = styled.button.attrs(() => ({
   }
 `;
 
+export const Link = styled.a`
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  color: ${props => props.theme.colors.gray2};
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+`;
+
 export const FiLogInIcon = styled(FiLogIn).attrs(props => ({
   color: props.theme.colors.red,
   size: "16px"
-}))``;
+}))`
+  margin-right: 8px;
+`;

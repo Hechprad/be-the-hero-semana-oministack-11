@@ -9,6 +9,7 @@ import {
   FiLogInIcon,
   Form,
   FormTitle,
+  Link,
   LogonButton,
   LogonContainer,
   SectionForm
@@ -25,10 +26,10 @@ const Logon = () => (
         <FormInput placeHolder="Sua ID" />
         <LogonButton>Entrar</LogonButton>
 
-        <a href="/register">
+        <Link href="/register">
           <FiLogInIcon />
           Não tenho cadastro
-        </a>
+        </Link>
       </Form>
     </SectionForm>
     <img src={heroesImg} alt="Heroes" />
