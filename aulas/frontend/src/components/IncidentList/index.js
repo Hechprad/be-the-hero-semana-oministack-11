@@ -2,21 +2,19 @@ import React from "react";
 
 import { FiTrash2Icon, Li, ListButton, StrongText, Text, Ul } from "./styles";
 
-export const CaseList = ({ content, ...rest }) => {
-  console.log(content);
-
+export const IncidentList = ({ content, ...rest }) => {
   return content ? (
-    <Ul>
-      {content.map(caseItem => (
-        <Li>
+    <Ul {...rest}>
+      {content.map(incidentItem => (
+        <Li key={incidentItem.id}>
           <StrongText>CASO:</StrongText>
-          <Text>{caseItem.caseTitle}</Text>
+          <Text>{incidentItem.incidentTitle}</Text>
 
           <StrongText>DESCRIÇÃO:</StrongText>
-          <Text>{caseItem.description}</Text>
+          <Text>{incidentItem.description}</Text>
 
           <StrongText>VALOR:</StrongText>
-          <Text>R$ {caseItem.value}</Text>
+          <Text>R$ {incidentItem.value}</Text>
 
           <ListButton>
             <FiTrash2Icon />
@@ -27,4 +25,4 @@ export const CaseList = ({ content, ...rest }) => {
   ) : null;
 };
 
-export default CaseList;
+export default IncidentList;
