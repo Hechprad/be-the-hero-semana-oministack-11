@@ -2,23 +2,46 @@ import React from "react";
 
 import logoImg from "../../assets/logo.svg";
 
+import CaseList from "../../components/CaseList";
+
 import {
   Button,
   FiPowerIcon,
-  FiTrash2Icon,
   Header,
   HeaderText,
   Img,
   Link,
-  ListItem,
   ProfileContainer,
-  StrongText,
-  Text,
-  Title,
-  UnorderedList
+  Title
 } from "./styles";
 
 export const Profile = () => {
+  const listContent = [
+    {
+      caseTitle: "Caso teste 1",
+      description:
+        "Descrição do caso teste 1, descrição do caso de teste, descrição do caso de teste, descrição do caso de teste",
+      value: 120
+    },
+    {
+      caseTitle: "Caso teste 2",
+      description:
+        "Descrição do caso teste 2, descrição do caso de teste, descrição do caso de teste, descrição do caso de teste",
+      value: 130
+    },
+    {
+      caseTitle: "Caso teste 3",
+      description:
+        "Descrição do caso teste 3, descrição do caso de teste, descrição do caso de teste, descrição do caso de teste",
+      value: 140
+    },
+    {
+      caseTitle: "Caso teste 4",
+      description:
+        "Descrição do caso teste 4, descrição do caso de teste, descrição do caso de teste, descrição do caso de teste",
+      value: 150
+    }
+  ];
   return (
     <ProfileContainer>
       <Header>
@@ -33,22 +56,7 @@ export const Profile = () => {
 
       <Title>Casos cadastrados</Title>
 
-      <UnorderedList>
-        <ListItem>
-          <StrongText>CASO:</StrongText>
-          <Text>Caso teste</Text>
-
-          <StrongText>DESCRIÇÃO:</StrongText>
-          <Text>Descrição do caso teste</Text>
-
-          <StrongText>VALOR:</StrongText>
-          <Text>R$ 120,00</Text>
-
-          <Button>
-            <FiTrash2Icon />
-          </Button>
-        </ListItem>
-      </UnorderedList>
+      <CaseList content={listContent} />
     </ProfileContainer>
   );
 };
