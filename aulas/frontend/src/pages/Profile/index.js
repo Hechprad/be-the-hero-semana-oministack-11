@@ -29,7 +29,19 @@ export const Profile = () => {
       <Title>Casos cadastrados</Title>
 
       <ul>
-        <li></li>
+        <li>
+          <strong>CASO:</strong>
+          <p>Caso teste</p>
+
+          <strong>DESCRIÇÃO:</strong>
+          <p>Descrição do caso teste</p>
+
+          <strong>VALOR:</strong>
+          <p>R$ 120,00</p>
+
+          <button type="button">FiTrash2</button>
+          <h1>1h05m</h1>
+        </li>
       </ul>
     </ProfileContainer>
   );
