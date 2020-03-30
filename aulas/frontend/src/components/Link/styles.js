@@ -6,7 +6,7 @@ export const LinkComponent = styled(ReactRouterDomLink)`
   display: flex;
   align-items: center;
   margin-top: 40px;
-  color: ${props => props.theme.colors.gray3};
+  color: ${props => props.theme.colors.gray5};
   font-size: 18px;
   text-decoration: none;
   font-weight: 500;

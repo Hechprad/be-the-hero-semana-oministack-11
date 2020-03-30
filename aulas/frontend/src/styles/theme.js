@@ -1,14 +1,14 @@
 export const themeColors = {
   background: "#f0f0f5",
-  black: "#000",
-  darkGray1: "#999999",
-  darkGray2: "#333333",
+  white: "#FFFFFF",
   gray1: "#dcdce6",
-  gray2: "#737380",
-  gray3: "#41414d",
-  red: "#e02041",
-  rocketSeatPurple: "#7159c1",
-  white: "#FFFFFF"
+  gray2: "#A8A8B3",
+  gray3: "#999999",
+  gray4: "#737380",
+  gray5: "#41414d",
+  gray6: "#333333",
+  black: "#000000",
+  red: "#e02041"
 };
 
 export default {
