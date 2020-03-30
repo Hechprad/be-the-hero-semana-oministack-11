@@ -34,7 +34,7 @@ export const SectionTitle = styled.h1`
 
 export const Text = styled.p`
   font-size: 18px;
-  color: ${props => props.theme.colors.gray2};
+  color: ${props => props.theme.colors.gray4};
   line-height: 32px;
 `;
 

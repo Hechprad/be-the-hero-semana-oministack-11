@@ -5,12 +5,17 @@ import logoImg from "../../assets/logo.svg";
 import {
   Button,
   FiPowerIcon,
+  FiTrash2Icon,
   Header,
+  HeaderText,
   Img,
   Link,
+  ListItem,
   ProfileContainer,
-  HeaderText,
-  Title
+  StrongText,
+  Text,
+  Title,
+  UnorderedList
 } from "./styles";
 
 export const Profile = () => {
@@ -28,21 +33,22 @@ export const Profile = () => {
 
       <Title>Casos cadastrados</Title>
 
-      <ul>
-        <li>
-          <strong>CASO:</strong>
-          <p>Caso teste</p>
+      <UnorderedList>
+        <ListItem>
+          <StrongText>CASO:</StrongText>
+          <Text>Caso teste</Text>
 
-          <strong>DESCRIÇÃO:</strong>
-          <p>Descrição do caso teste</p>
+          <StrongText>DESCRIÇÃO:</StrongText>
+          <Text>Descrição do caso teste</Text>
 
-          <strong>VALOR:</strong>
-          <p>R$ 120,00</p>
+          <StrongText>VALOR:</StrongText>
+          <Text>R$ 120,00</Text>
 
-          <button type="button">FiTrash2</button>
-          <h1>1h05m</h1>
-        </li>
-      </ul>
+          <Button>
+            <FiTrash2Icon />
+          </Button>
+        </ListItem>
+      </UnorderedList>
     </ProfileContainer>
   );
 };
