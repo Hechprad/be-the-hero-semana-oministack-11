@@ -48,7 +48,7 @@ export const Register = () => {
               `}
             />
           </InputGroup>
-          <Button type="submit"></Button>
+          <Button type="submit" />
         </Form>
       </ContentWrapper>
     </RegisterContainer>
