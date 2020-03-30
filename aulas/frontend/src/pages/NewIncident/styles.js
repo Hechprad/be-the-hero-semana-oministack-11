@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { FiArrowLeft } from "react-icons/fi";
 
-export const RegisterContainer = styled.div`
+export const NewIncidenContainer = styled.div`
   width: 100%;
   max-width: 1120px;
   height: 100vh;
@@ -46,16 +46,23 @@ export const Form = styled.form`
   }
 `;
 
-export const InputGroup = styled.div`
-  display: flex;
-  & input + input {
-    margin-left: 8px;
-  }
-`;
-
 export const FiArrowLeftIcon = styled(FiArrowLeft).attrs(props => ({
   color: props.theme.colors.red,
   size: "16px"
 }))`
   margin-right: 8px;
+`;
+
+export const FormTextArea = styled.textarea.attrs(props => ({
+  placeholder: props.placeHolder
+}))`
+  width: 100%;
+  min-height: 140px;
+  resize: vertical;
+  color: ${props => props.theme.colors.gray6};
+  border: 1px solid ${props => props.theme.colors.gray1};
+  border-radius: 8px;
+  padding: 16px 24px;
+  line-height: 24px;
+  margin-top: 8px;
 `;

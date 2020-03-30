@@ -42,7 +42,7 @@ export const Link = styled(ReactRouterDomLink)`
   }
 `;
 
-export const Button = styled.button.attrs(props => ({
+export const Button = styled.button.attrs(() => ({
   type: "button"
 }))`
   height: 60px;
@@ -54,7 +54,7 @@ export const Button = styled.button.attrs(props => ({
   transition: border-color 0.2s;
 
   &:hover {
-    border-color: ${props => props.theme.colors.darkGray1};
+    border-color: ${props => props.theme.colors.gray3};
   }
 `;
 
@@ -64,6 +64,5 @@ export const FiPowerIcon = styled(FiPower).attrs(props => ({
 }))``;
 
 export const Title = styled.h1`
-  font-size: 32px;
-  margin: 64px 0 32px;
+  margin: 80px 0 24px;
 `;
