@@ -54,7 +54,7 @@ export const Button = styled.button.attrs(props => ({
   transition: border-color 0.2s;
 
   &:hover {
-    border-color: ${props => props.theme.colors.darkGray1};
+    border-color: ${props => props.theme.colors.gray3};
   }
 `;
 
