@@ -59,10 +59,10 @@ Conectar ONGs a pessoas que possuem vontade de ajudar e muitas vezes não tem te
   - [x] Estado
   - [x] Imutabilidade
 - [x] Página de login
-- [ ] Configurando rotas
-- [ ] Cadastro de ONGs
-- [ ] Listagem de casos
-- [ ] Cadastro de um novo caso
+- [x] Configurando rotas
+- [x] Cadastro de ONGs
+- [x] Listagem de casos
+- [x] Cadastro de um novo caso
 - [ ] Conectanto a aplicação à API
 - [ ] Enviar projeto ao Github
 
