@@ -8,7 +8,7 @@ export const IncidentList = ({ content, ...rest }) => {
       {content.map(incidentItem => (
         <Li key={incidentItem.id}>
           <StrongText>CASO:</StrongText>
-          <Text>{incidentItem.incidentTitle}</Text>
+          <Text>{incidentItem.title}</Text>
 
           <StrongText>DESCRIÇÃO:</StrongText>
           <Text>{incidentItem.description}</Text>

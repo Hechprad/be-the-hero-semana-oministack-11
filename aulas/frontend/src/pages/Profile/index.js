@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
+import api from "../../services/api";
 
 import logoImg from "../../assets/logo.svg";
 
@@ -16,41 +18,27 @@ import {
 } from "./styles";
 
 export const Profile = () => {
-  const listContent = [
-    {
-      id: 1,
-      incidentTitle: "Caso teste 1",
-      description:
-        "Descrição do caso teste 1, descrição do caso de teste, descrição do caso de teste, descrição do caso de teste",
-      value: 120
-    },
-    {
-      id: 2,
-      incidentTitle: "Caso teste 2",
-      description:
-        "Descrição do caso teste 2, descrição do caso de teste, descrição do caso de teste, descrição do caso de teste",
-      value: 130
-    },
-    {
-      id: 3,
-      incidentTitle: "Caso teste 3",
-      description:
-        "Descrição do caso teste 3, descrição do caso de teste, descrição do caso de teste, descrição do caso de teste",
-      value: 140
-    },
-    {
-      id: 4,
-      incidentTitle: "Caso teste 4",
-      description:
-        "Descrição do caso teste 4, descrição do caso de teste, descrição do caso de teste, descrição do caso de teste",
-      value: 150
-    }
-  ];
+  const [incidentsData, setIncidentsData] = useState([]);
+  const ongId = localStorage.getItem("ongId");
+  const ongName = localStorage.getItem("ongName");
+
+  useEffect(() => {
+    api
+      .get("profile", {
+        headers: { Authorization: ongId }
+      })
+      .then(response => {
+        setIncidentsData(response.data);
+      });
+  }, [ongId]);
+
+  console.log(incidentsData);
+
   return (
     <ProfileContainer>
       <Header>
         <Img src={logoImg} alt="Be The Hero" />
-        <HeaderText>Bem vinda, APAD</HeaderText>
+        <HeaderText>{`Bem vinda, ${ongName}`}</HeaderText>
 
         <Link to="/incidents/new">Cadastrar novo caso</Link>
         <Button>
@@ -60,7 +48,7 @@ export const Profile = () => {
 
       <Title>Casos cadastrados</Title>
 
-      <IncidentList content={listContent} />
+      {incidentsData.length > 0 && <IncidentList content={incidentsData} />}
     </ProfileContainer>
   );
 };
