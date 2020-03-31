@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+import api from "../../services/api";
+
+import { useHistory } from "react-router-dom";
 
 import logoImg from "../../assets/logo.svg";
 import heroesImg from "../../assets/heroes.png";
@@ -15,25 +18,50 @@ import {
   SectionForm
 } from "./styles";
 
-const Logon = () => (
-  <LogonContainer>
-    <SectionForm>
-      <img src={logoImg} alt="Be The Hero" />
+const Logon = () => {
+  const [id, setId] = useState("");
 
-      <Form>
-        <FormTitle>Faça seu logon</FormTitle>
+  const history = useHistory();
 
-        <FormInput placeHolder="Sua ID" />
-        <Button type="submit">Entrar</Button>
+  const handleLogin = async event => {
+    event.preventDefault();
 
-        <Link to="/register">
-          <FiLogInIcon />
-          Não tenho cadastro
-        </Link>
-      </Form>
-    </SectionForm>
-    <img src={heroesImg} alt="Heroes" />
-  </LogonContainer>
-);
+    try {
+      const response = await api.post("sessions", { id });
+
+      localStorage.setItem("ongId", id);
+      localStorage.setItem("ongName", response.data.name);
+
+      history.push("/profile");
+    } catch (err) {
+      alert("Falha no login. Tente novamente.");
+    }
+  };
+
+  return (
+    <LogonContainer>
+      <SectionForm onSubmit={handleLogin}>
+        <img src={logoImg} alt="Be The Hero" />
+
+        <Form>
+          <FormTitle>Faça seu logon</FormTitle>
+
+          <FormInput
+            placeHolder="Sua ID"
+            value={id}
+            onChange={e => setId(e.target.value)}
+          />
+          <Button type="submit">Entrar</Button>
+
+          <Link to="/register">
+            <FiLogInIcon />
+            Não tenho cadastro
+          </Link>
+        </Form>
+      </SectionForm>
+      <img src={heroesImg} alt="Heroes" />
+    </LogonContainer>
+  );
+};
 
 export default Logon;
