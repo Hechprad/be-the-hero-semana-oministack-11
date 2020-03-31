@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 import logoImg from "../../assets/logo.svg";
 
@@ -18,13 +19,20 @@ import {
 export const Profile = () => {
   const ongName = localStorage.getItem("ongName");
 
+  const history = useHistory();
+
+  const handleLogout = () => {
+    localStorage.clear();
+    history.push("/");
+  };
+
   return (
     <ProfileContainer>
       <Header>
         <Img src={logoImg} alt="Be The Hero" />
         <HeaderText>{`Bem vinda, ${ongName}`}</HeaderText>
         <Link to="/incidents/new">Cadastrar novo caso</Link>
-        <Button>
+        <Button onClick={handleLogout}>
           <FiPowerIcon />
         </Button>
       </Header>
