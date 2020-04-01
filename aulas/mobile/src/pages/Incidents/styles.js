@@ -36,11 +36,3 @@ export const DescriptionText = styled.Text`
   line-height: 24px;
   color: ${props => props.theme.colors.gray4};
 `;
-
-export const IncidentList = styled.View``;
-
-export const Incident = styled.View``;
-
-export const IncidentPropertyText = styled.Text``;
-
-export const IncidentValueText = styled.Text``;
