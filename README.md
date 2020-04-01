@@ -38,13 +38,13 @@ Conectar ONGs a pessoas que possuem vontade de ajudar e muitas vezes não tem te
     - [x] Caso (incident)
   - Funcionalidades
     - [x] Login de ONG
-    - [ ] Logout de ONG (Front-end)
+    - [x] Logout de ONG (Front-end)
     - [x] Cadastro de ONG
     - [x] Cadastrar novos casos
     - [x] Deletar casos
     - [x] Listar casos específicos de uma ONG
     - [x] Listar todos os casos
-    - [ ] Entrar em contato com a ONG (Front-end)
+    - [x] Entrar em contato com a ONG (Front-end)
 - [x] Construção do back-end
 - [x] Adicionando módulo CORS
 - [x] Enviando back-end ao Github
@@ -63,8 +63,8 @@ Conectar ONGs a pessoas que possuem vontade de ajudar e muitas vezes não tem te
 - [x] Cadastro de ONGs
 - [x] Listagem de casos
 - [x] Cadastro de um novo caso
-- [ ] Conectanto a aplicação à API
-- [ ] Enviar projeto ao Github
+- [x] Conectanto a aplicação à API
+- [x] Enviar projeto ao Github
 
 ### 📌 Quarto dia - 26/03/2020
 
