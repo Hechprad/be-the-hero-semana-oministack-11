@@ -2,13 +2,11 @@ import React from "react";
 
 import logoImg from "../../assets/logo.png";
 
+import IncidentList from "../../components/IncidentList";
+
 import {
   DescriptionText,
   Image,
-  Incident,
-  IncidentList,
-  IncidentPropertyText,
-  IncidentValueText,
   HeaderText,
   HeaderTextBold,
   Title,
@@ -29,18 +27,7 @@ export default function Incidents() {
       <DescriptionText>
         Escolha um dos casos a baixo e salve o dia.
       </DescriptionText>
-      <IncidentList>
-        <Incident>
-          <IncidentPropertyText>ONG:</IncidentPropertyText>
-          <IncidentValueText>APAD</IncidentValueText>
-
-          <IncidentPropertyText>CASO:</IncidentPropertyText>
-          <IncidentValueText>Cadelinha atropelada</IncidentValueText>
-
-          <IncidentPropertyText>VALOR:</IncidentPropertyText>
-          <IncidentValueText>120</IncidentValueText>
-        </Incident>
-      </IncidentList>
+      <IncidentList />
     </Container>
   );
 }

@@ -84,8 +84,8 @@ Conectar ONGs a pessoas que possuem vontade de ajudar e muitas vezes não tem te
     - [x] Estilização própria
 - [x] Estrutura de Pastas
 - [x] Ícone e Splash Screen
-- [ ] Configurando navegação
-- [ ] Página de casos
+- [x] Configurando navegação
+- [x] Página de casos
 - [ ] Detalhe do caso
 - [ ] Abrindo Whatsapp & E-mail
 - [ ] Conexão com a API
