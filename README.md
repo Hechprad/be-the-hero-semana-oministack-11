@@ -68,7 +68,28 @@ Conectar ONGs a pessoas que possuem vontade de ajudar e muitas vezes não tem te
 
 ### 📌 Quarto dia - 26/03/2020
 
-- [ ]
+- [ ] Instalando Expo
+- [ ] Criando projeto React Native
+- [ ] Executando projeto
+  - [ ] No celular
+  - [ ] Emuladores
+  - [ ] Expo Snack
+- [ ] Diferenças para o ReactJS
+  - [ ] Elementos HTML
+  - [ ] Semântica
+  - [ ] Estilização
+    - [ ] Flexbox
+    - [ ] Propriedades
+    - [ ] Herança de estilos
+    - [ ] Estilização própria
+- [ ] Estrutura de Pastas
+- [ ] Ícone e Splash Screen
+- [ ] Configurando navegação
+- [ ] Página de casos
+- [ ] Detalhe do caso
+- [ ] Abrindo Whatsapp & E-mail
+- [ ] Conexão com a API
+- [ ] Enviando projeto ao Github
 
 ### 📌 Quinto dia - 27/03/2020
 
