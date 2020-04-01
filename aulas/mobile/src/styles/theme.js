@@ -7,7 +7,7 @@ export const themeColors = {
   gray4: "#737380",
   gray5: "#41414d",
   gray6: "#333333",
-  black: "#000000",
+  black: "#13131A",
   red: "#e02041"
 };
 
