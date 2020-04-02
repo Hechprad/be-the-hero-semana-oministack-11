@@ -1,20 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import logoImg from "../../assets/logo.png";
 
-import IncidentList from "../../components/IncidentList";
+import Incident from "../../components/Incident";
+
+import api from "../../services/api";
 
 import {
+  Container,
   DescriptionText,
   Image,
+  IncidentListView,
   HeaderText,
   HeaderTextBold,
   Title,
-  Container,
   Header
 } from "./styles";
 
 export default function Incidents() {
+  const [incidents, setIncidents] = useState([]);
+
+  const loadIncidents = async () => {
+    const response = await api.get("incidents");
+
+    setIncidents(response.data);
+  };
+
+  useEffect(() => {
+    loadIncidents();
+  }, []);
+
   return (
     <Container>
       <Header>
@@ -27,7 +42,14 @@ export default function Incidents() {
       <DescriptionText>
         Escolha um dos casos a baixo e salve o dia.
       </DescriptionText>
-      <IncidentList />
+      <IncidentListView
+        data={incidents}
+        keyExtractor={incident => String(incident.id)}
+        showsVerticalScrollIndicator={false}
+        renderItem={({ item: incident }) => (
+          <Incident incident={incident} hasDetailsButton />
+        )}
+      />
     </Container>
   );
 }

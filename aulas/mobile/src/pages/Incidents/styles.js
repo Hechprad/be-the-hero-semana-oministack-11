@@ -36,3 +36,7 @@ export const DescriptionText = styled.Text`
   line-height: 24px;
   color: ${props => props.theme.colors.gray4};
 `;
+
+export const IncidentListView = styled.FlatList`
+  margin-top: 32px;
+`;
