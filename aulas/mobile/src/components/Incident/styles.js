@@ -1,11 +1,7 @@
 import styled from "styled-components/native";
 import { Feather } from "@expo/vector-icons";
 
-export const IncidentListView = styled.FlatList`
-  margin-top: 32px;
-`;
-
-export const Incident = styled.View`
+export const IncidentView = styled.View`
   padding: 24px;
   border-radius: 8px;
   background-color: ${props => props.theme.colors.white};
@@ -21,7 +17,7 @@ export const IncidentPropertyText = styled.Text`
 export const IncidentValueText = styled.Text`
   margin-top: 8px;
   font-size: 15px;
-  margin-bottom: 24px;
+  margin-bottom: ${props => (props.hasDetailsButton ? "24px" : "0")};
   color: ${props => props.theme.colors.gray4};
 `;
 
