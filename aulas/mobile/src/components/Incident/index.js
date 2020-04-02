@@ -13,7 +13,8 @@ export default function Incident({
   ongName,
   description,
   value,
-  hasDetailsButton
+  hasDetailsButton,
+  ...rest
 }) {
   const navigation = useNavigation();
   const navigateToDetail = () => {
@@ -21,26 +22,20 @@ export default function Incident({
   };
 
   return (
-    <IncidentView>
-      <IncidentPropertyText hasDetailsButton={hasDetailsButton}>
-        ONG:
-      </IncidentPropertyText>
+    <IncidentView {...rest}>
+      <IncidentPropertyText>ONG:</IncidentPropertyText>
       <IncidentValueText hasDetailsButton={hasDetailsButton}>
         {/* {ongName} */}
         APAD
       </IncidentValueText>
 
-      <IncidentPropertyText hasDetailsButton={hasDetailsButton}>
-        CASO:
-      </IncidentPropertyText>
+      <IncidentPropertyText>CASO:</IncidentPropertyText>
       <IncidentValueText hasDetailsButton={hasDetailsButton}>
         {/* {description} */}
         Cadelinha atropelada
       </IncidentValueText>
 
-      <IncidentPropertyText hasDetailsButton={hasDetailsButton}>
-        VALOR:
-      </IncidentPropertyText>
+      <IncidentPropertyText>VALOR:</IncidentPropertyText>
       <IncidentValueText hasDetailsButton={hasDetailsButton}>
         {/* {Intl.NumberFormat("pt-BR", {
           style: "currency",

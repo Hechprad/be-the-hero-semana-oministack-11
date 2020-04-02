@@ -12,8 +12,6 @@ export const IncidentPropertyText = styled.Text`
   font-size: 14px;
   color: ${props => props.theme.colors.gray5};
   font-weight: bold;
-  margin-top: ${props => (props.hasDetailsButton ? "0" : "24px")};
-  ******************************************
 `;
 
 export const IncidentValueText = styled.Text`
