@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
+
 import {
   DetailsButton,
   DetailsButtonText,
@@ -9,13 +10,7 @@ import {
   IncidentValueText
 } from "./styles";
 
-export default function Incident({
-  ongName,
-  description,
-  value,
-  hasDetailsButton,
-  ...rest
-}) {
+export default function Incident({ incident, hasDetailsButton, ...rest }) {
   const navigation = useNavigation();
   const navigateToDetail = () => {
     navigation.navigate("Detail");
@@ -25,23 +20,20 @@ export default function Incident({
     <IncidentView {...rest}>
       <IncidentPropertyText>ONG:</IncidentPropertyText>
       <IncidentValueText hasDetailsButton={hasDetailsButton}>
-        {/* {ongName} */}
-        APAD
+        {incident.name}
       </IncidentValueText>
 
       <IncidentPropertyText>CASO:</IncidentPropertyText>
       <IncidentValueText hasDetailsButton={hasDetailsButton}>
-        {/* {description} */}
-        Cadelinha atropelada
+        {incident.description}
       </IncidentValueText>
 
       <IncidentPropertyText>VALOR:</IncidentPropertyText>
       <IncidentValueText hasDetailsButton={hasDetailsButton}>
-        {/* {Intl.NumberFormat("pt-BR", {
+        {Intl.NumberFormat("pt-BR", {
           style: "currency",
           currency: "BRL"
-        }).format(value)} */}
-        R$ 120,00
+        }).format(incident.value)}
       </IncidentValueText>
 
       {!!hasDetailsButton && (

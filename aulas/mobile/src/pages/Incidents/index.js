@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import logoImg from "../../assets/logo.png";
 
 import Incident from "../../components/Incident";
+
+import api from "../../services/api";
 
 import {
   Container,
@@ -16,6 +18,18 @@ import {
 } from "./styles";
 
 export default function Incidents() {
+  const [incidents, setIncidents] = useState([]);
+
+  const loadIncidents = async () => {
+    const response = await api.get("incidents");
+
+    setIncidents(response.data);
+  };
+
+  useEffect(() => {
+    loadIncidents();
+  }, []);
+
   return (
     <Container>
       <Header>
@@ -29,10 +43,12 @@ export default function Incidents() {
         Escolha um dos casos a baixo e salve o dia.
       </DescriptionText>
       <IncidentListView
-        data={[1, 2, 3, 4, 5]}
-        keyExtractor={incident => String(incident)}
+        data={incidents}
+        keyExtractor={incident => String(incident.id)}
         showsVerticalScrollIndicator={false}
-        renderItem={() => <Incident incident hasDetailsButton />}
+        renderItem={({ item: incident }) => (
+          <Incident incident={incident} hasDetailsButton />
+        )}
       />
     </Container>
   );
