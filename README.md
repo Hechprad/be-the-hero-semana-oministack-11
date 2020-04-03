@@ -4,9 +4,87 @@
 
 ## 🦸‍♀️Aplicação - Be the Hero 🦸‍♂️
 
-#### Propósito do projeto:
+#### Propósito do projeto
 
 Conectar ONGs a pessoas que possuem vontade de ajudar e muitas vezes não tem tempo, mas podem ajudar financeiramente.
+
+#### Executando as aplicações
+
+Após clonar o repositório:
+
+---
+
+- Backend:
+
+  - Acesse a pasta 'backend'
+
+  ```shell
+    cd be-the-hero-semana-omnistack-11/aulas/backend
+  ```
+
+  - Iniciar aplicação
+
+  ```shell
+    npm start
+  ```
+
+  - Endpoints => http://localhost:3333
+    - POST - "/sessions"
+    - GET - "/ongs"
+    - POST - "/ongs"
+    - GET - "/profile"
+    - GET - "/incidents"
+    - POST - "/incidents"
+    - DELETE - "/incidents/:id"
+
+---
+
+- Frontend:
+
+  - Acesse a pasta 'frontend'
+
+  ```shell
+    cd be-the-hero-semana-omnistack-11/aulas/frontend
+  ```
+
+  - Iniciar aplicação
+
+  ```shell
+    npm start
+  ```
+
+  - Endpoints => http://localhost:3000
+    - "/"
+    - "/register"
+    - "/profile"
+    - "/incidents/new"
+
+---
+
+- Mobile:
+
+  - Instalar o app [Expo](https://docs.expo.io/versions/latest/) no celular
+  - Acesse a pasta 'mobile'
+
+  ```shell
+    cd be-the-hero-semana-omnistack-11/aulas/mobile
+  ```
+
+  - Altere o endereço da baseURL de acordo com o seu IP no arquivo api.js
+
+    - Caminho do arquivo:
+
+      ```shell
+        be-the-hero-semana-omnistack-11/aulas/mobile/src/services/api.js
+      ```
+
+  - Iniciar aplicação
+
+  ```shell
+    yarn start
+  ```
+
+  - Escaneie o qrcode com a câmera do celular na página que irá abrir após executar o "yarn start"
 
 ---
 
@@ -96,6 +174,7 @@ Conectar ONGs a pessoas que possuem vontade de ajudar e muitas vezes não tem te
 - [ ] Adicionando validação
 - [ ] Adicionando testes
   - [ ] Por que fazer testes?
+  - [ ] TDD
   - [ ] Configurando Jest
   - [ ] Tipos de testes
   - [ ] Configurando banco de testes
