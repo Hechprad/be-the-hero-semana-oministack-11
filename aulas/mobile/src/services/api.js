@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  // baseURL: "http://192.168.15.16:3333"
+  // Altere aqui, de acordo com o seu, o endereço de IP.
   baseURL: "http://192.168.15.19:3333"
 });
 
