@@ -19,9 +19,12 @@ import {
 
 export default function Incidents() {
   const [incidents, setIncidents] = useState([]);
+  const [total, setTotal] = useState(0);
 
   const loadIncidents = async () => {
     const response = await api.get("incidents");
+
+    setTotal(response.headers["x-total-count"]);
 
     setIncidents(response.data);
   };
@@ -35,7 +38,7 @@ export default function Incidents() {
       <Header>
         <Image source={logoImg} />
         <HeaderText>
-          Total de <HeaderTextBold>0 casos.</HeaderTextBold>
+          Total de <HeaderTextBold>{total} casos.</HeaderTextBold>
         </HeaderText>
       </Header>
       <Title>Bem-vindo!</Title>
