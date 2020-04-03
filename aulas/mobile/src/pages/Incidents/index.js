@@ -19,11 +19,22 @@ import {
 
 export default function Incidents() {
   const [incidents, setIncidents] = useState([]);
+  const [total, setTotal] = useState(0);
+  const [page, setPage] = useState(1);
+  const [loading, setLoading] = useState(false);
 
   const loadIncidents = async () => {
-    const response = await api.get("incidents");
+    if (loading) return;
+    if (total > 0 && incidents.length === total) return;
 
-    setIncidents(response.data);
+    setLoading(true);
+
+    const response = await api.get("incidents", { params: { page } });
+
+    setTotal(response.headers["x-total-count"]);
+    setIncidents([...incidents, ...response.data]);
+    setPage(page + 1);
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -35,7 +46,7 @@ export default function Incidents() {
       <Header>
         <Image source={logoImg} />
         <HeaderText>
-          Total de <HeaderTextBold>0 casos.</HeaderTextBold>
+          Total de <HeaderTextBold>{total} casos.</HeaderTextBold>
         </HeaderText>
       </Header>
       <Title>Bem-vindo!</Title>
@@ -46,6 +57,8 @@ export default function Incidents() {
         data={incidents}
         keyExtractor={incident => String(incident.id)}
         showsVerticalScrollIndicator={false}
+        onEndReached={loadIncidents}
+        onEndReachedThreshold={0.2}
         renderItem={({ item: incident }) => (
           <Incident incident={incident} hasDetailsButton />
         )}
