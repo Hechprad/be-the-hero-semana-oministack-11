@@ -52,7 +52,7 @@ export default function Details() {
   const sendWhatsapp = () => {
     Linking.openURL(`whatsapp://send?phone=${cel}&text=${message}`);
   };
-  console.log(incident);
+
   return (
     <Container>
       <Header>
