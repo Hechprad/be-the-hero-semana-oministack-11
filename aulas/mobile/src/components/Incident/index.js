@@ -12,15 +12,15 @@ import {
 
 export default function Incident({ incident, hasDetailsButton, ...rest }) {
   const navigation = useNavigation();
-  const navigateToDetail = () => {
-    navigation.navigate("Detail");
+  const navigateToDetail = incident => {
+    navigation.navigate("Detail", { incident });
   };
 
   return (
     <IncidentView {...rest}>
       <IncidentPropertyText>ONG:</IncidentPropertyText>
       <IncidentValueText hasDetailsButton={hasDetailsButton}>
-        {incident.name}
+        {incident.name} de {incident.city}/{incident.uf}
       </IncidentValueText>
 
       <IncidentPropertyText>CASO:</IncidentPropertyText>
@@ -37,7 +37,7 @@ export default function Incident({ incident, hasDetailsButton, ...rest }) {
       </IncidentValueText>
 
       {!!hasDetailsButton && (
-        <DetailsButton onPress={navigateToDetail}>
+        <DetailsButton onPress={() => navigateToDetail(incident)}>
           <DetailsButtonText>Ver mais detalhes</DetailsButtonText>
           <FeatherIcon name="arrow-right" size={16} />
         </DetailsButton>

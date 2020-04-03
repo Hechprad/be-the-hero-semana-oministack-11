@@ -88,8 +88,8 @@ Conectar ONGs a pessoas que possuem vontade de ajudar e muitas vezes não tem te
 - [x] Página de casos
 - [x] Detalhe do caso
 - [x] Abrindo Whatsapp & E-mail
-- [ ] Conexão com a API
-- [ ] Enviando projeto ao Github
+- [x] Conexão com a API
+- [x] Enviando projeto ao Github
 
 ### 📌 Quinto dia - 27/03/2020
 
