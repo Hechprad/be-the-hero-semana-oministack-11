@@ -93,6 +93,23 @@ Conectar ONGs a pessoas que possuem vontade de ajudar e muitas vezes não tem te
 
 ### 📌 Quinto dia - 27/03/2020
 
-- [ ]
+- [ ] Adicionando validação
+- [ ] Adicionando testes
+  - [ ] Por que fazer testes?
+  - [ ] Configurando Jest
+  - [ ] Tipos de testes
+  - [ ] Configurando banco de testes
+  - [ ] Instalando supertest
+  - [ ] Testando rota de autenticação
+- [ ] Deploy
+  - [ ] Alternativas
+  - [ ] Qual escolher?
+- [ ] Estudos daqui para frente
+  - [ ] Padrões de código: ESLint, Prettier
+  - [ ] Autenticação JWT
+  - [ ] Styled Components
+- [ ] Dicas para aproveitar melhor
+  - [ ] Github
+  - [ ] Linkedin
 
 ---
