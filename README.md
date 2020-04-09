@@ -171,7 +171,7 @@ Após clonar o repositório:
 
 ### 📌 Quinto dia - 27/03/2020
 
-- [ ] Adicionando validação
+- [x] Adicionando validação
 - [ ] Adicionando testes
   - [ ] Por que fazer testes?
   - [ ] TDD
