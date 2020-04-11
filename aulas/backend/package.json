@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon src/index.js",
-    "test": "cross-env NODE-ENV=test && jest"
+    "test": "cross-env NODE-ENV=test jest"
   },
   "keywords": [],
   "author": "",
@@ -15,11 +15,12 @@
     "cors": "^2.8.5",
     "cross-env": "^7.0.2",
     "express": "^4.17.1",
-    "jest": "^25.3.0",
     "knex": "^0.20.13",
     "sqlite3": "^4.1.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "jest": "^25.3.0",
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2"
   }
 }
