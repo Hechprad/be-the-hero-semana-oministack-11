@@ -3,8 +3,8 @@
  * set the table schema
  * npx knex migrate:latest
  */
-exports.up = function(knex) {
-  return knex.schema.createTable("incidents", table => {
+exports.up = function (knex) {
+  return knex.schema.createTable("incidents", (table) => {
     table.increments(); //Primary key
 
     table.string("title").notNullable();
@@ -13,13 +13,10 @@ exports.up = function(knex) {
 
     table.string("ong_id").notNullable(); //Foreign Key
 
-    table
-      .foreign("ong_id")
-      .references("id")
-      .inTable("ongs");
+    table.foreign("ong_id").references("id").inTable("ongs");
   });
 };
 
-exports.down = function(knex) {
-  return knex.scheme.dropTable("incidents");
+exports.down = function (knex) {
+  return knex.schema.dropTable("incidents");
 };

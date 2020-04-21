@@ -28,6 +28,13 @@ Após clonar o repositório:
   npm start
 ```
 
+- Rodar testes
+
+```shell
+  npm test
+```
+
+
 - Endpoints => http://localhost:3333
   - POST - "/sessions"
   - GET - "/ongs"
@@ -172,23 +179,23 @@ Após clonar o repositório:
 ### 📌 Quinto dia - 27/03/2020
 
 - [x] Adicionando validação
-- [ ] Adicionando testes
-  - [ ] Por que fazer testes?
-  - [ ] TDD
-  - [ ] Configurando Jest
-  - [ ] Tipos de testes
-  - [ ] Configurando banco de testes
-  - [ ] Instalando supertest
-  - [ ] Testando rota de autenticação
-- [ ] Deploy
-  - [ ] Alternativas
-  - [ ] Qual escolher?
-- [ ] Estudos daqui para frente
-  - [ ] Padrões de código: ESLint, Prettier
-  - [ ] Autenticação JWT
-  - [ ] Styled Components
-- [ ] Dicas para aproveitar melhor
-  - [ ] Github
-  - [ ] Linkedin
+- [x] Adicionando testes
+  - [x] Por que fazer testes?
+  - [x] TDD
+  - [x] Configurando Jest
+  - [x] Tipos de testes
+  - [x] Configurando banco de testes
+  - [x] Instalando supertest
+  - [x] Testando rota de autenticação
+- [x] Deploy
+  - [x] Alternativas
+  - [x] Qual escolher?
+- [x] Estudos daqui para frente
+  - [x] Padrões de código: ESLint, Prettier
+  - [x] Autenticação JWT
+  - [x] Styled Components
+- [x] Dicas para aproveitar melhor
+  - [x] Github
+  - [x] Linkedin
 
 ---
